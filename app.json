@@ -1,0 +1,44 @@
+{
+  "pages":[
+    "pages/splash/splash",
+    "pages/firstPage/firstPage",
+    "pages/free/free",
+    
+    "pages/logs/logs",
+    
+    "pages/index/index",
+    
+    "pages/video/video"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#35495e",
+    "backgroundColor": "#f5f5f5",
+    "list": [
+      {
+        "pagePath":"pages/firstPage/firstPage",
+        "text":"首页",
+        "iconPath":"images/lesson1.png",
+        "selectedIconPath":"images/lesson2.png"
+      },
+        {
+          "pagePath": "pages/free/free",
+          "text": "课间",
+          "iconPath": "images/ketang1.png",
+          "selectedIconPath": "images/ketang2.png"
+        },
+          {
+            "pagePath": "pages/index/index",
+            "text": "我的",
+            "iconPath": "images/imformation1.png",
+            "selectedIconPath": "images/imformation2.png"
+          }
+    ]
+}
+}

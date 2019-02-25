@@ -1,0 +1,52 @@
+<image class='background' src='{{backs[0].imageURL}}'  mode='aspectFill'></image>
+<scroll-view class='container' scroll-y="true">
+<!--1.首页轮播图  -->
+  <view class='slide'>
+    <swiper indicator-dots='true' autoplay='true' interval='5000' duration='2000'>
+      <swiper-item wx:for="{{slides}}" wx:for-item="item">
+      <image src='{{item.image}}' mode='aspectFill'></image>
+      </swiper-item>
+    </swiper>
+  </view>
+
+<!--2.课程  -->
+
+ 
+  <scroll-view class='subjects-y' scrol-y="true">
+    <!-- <scroll-view class='subjects-x' scrol-x="true"> -->
+    <view class='inner'>
+      <navigator view class='item' wx:for="{{books}}" wx:for-item="item" 
+      url='../video/video?id={{item.id}}'>
+     
+      
+      
+          <view class='item-left'>
+            <image src='{{item.image}}' mode='aspcetFill'></image>
+          </view>
+
+          
+          <view class='item-right' >
+          
+          
+             <view>
+            <text class="title">课程名 ：  {{item.title}}</text>
+            </view>
+            <view>
+            <text class="time">课时： {{item.time}}</text>
+            </view> 
+            
+           </view>
+        </navigator>
+      </view>
+
+  
+   <!-- </scroll-view> -->
+  </scroll-view>
+
+  
+    
+
+
+
+
+</scroll-view>

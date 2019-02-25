@@ -1,0 +1,92 @@
+page{
+    background: black;
+}
+.dark-box #header{
+    background: #333;
+    color:#999;
+}
+
+.dark-box .flex-wrap{
+    background:black;
+}
+.dark-box #menus{
+    background: black;
+}
+.dark-box .content{
+    border-bottom: 0.5px solid #ebebeb; 
+}
+
+
+page{
+    background: black;
+}
+.dark-box #header{
+    width:100%;
+    height:260px;
+    background: #333;
+    color:#999;
+}
+.dark-box #header .content{
+    padding-top:40px;
+    text-align: center;
+}
+.dark-box #header .content image{
+    width:100px;
+    height:100px;
+    border-radius: 100px;
+}
+.dark-box #header .content .nickname{
+    padding-top:20px;
+}
+.dark-box #header .content .orther{
+    padding-top:10px;
+    font-size:15px;
+}
+.dark-box #section .flex-wrap{
+    display:flex;
+    flex-direction:row;
+    text-align:center;
+    background:black;
+    padding:30rpx;
+}
+.dark-box #section .flex-item{
+    flex:1;
+}
+.dark-box #section .icon{
+    width:23px;
+    height:23px;
+}
+.dark-box #section .menus_title{
+    display: block;
+}
+
+.dark-box #section .menus_title text{
+    font-size:13px;
+    color: white;
+}
+.dark-box #menus{
+    background: black;
+    margin-top:10px;
+    height:auto;
+    width:100%;
+    color: white;
+}
+.dark-box #menus .content{
+    height:45px;
+    border-bottom: 0.5px solid #333; 
+}
+.dark-box #menus .content .view{
+    float: left;
+}
+.dark-box #menus .content .view text{
+    font-size:15px;
+    line-height:45px;
+    padding-left:20px;
+}
+.dark-box #menus .content .right{
+    height: 45px;
+    float: right;
+    margin-right:10px;
+    line-height: 45px;
+    background-color: white;
+}

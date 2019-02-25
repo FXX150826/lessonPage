@@ -1,0 +1,182 @@
+/* pages/free/free.wxss */
+
+.container {
+  background-color: #f6f6f6;
+  display: flex;
+}
+
+/*轮播图  */
+
+.slide swiper {
+  /*rpx:根据屏幕宽度自适应  */
+  height: 200rpx;
+  /* background-color: #f00;  */
+}
+
+.slide swiper image {
+  height: 200rpx;
+  width: 100%;
+}
+
+.talk {
+  /*此元素的内边距和边框都不会再增加它的宽度和高度  */
+  box-sizing: border-box;
+  background-color: #fff;
+  margin-top: 15px;
+}
+
+.main {
+  margin-left: 130px;
+  font-size: 25px;
+  opacity: 0.8;
+}
+
+.neirong {
+  /*此元素的内边距和边框都不会再增加它的宽度和高度  */
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.neirong text {
+  font-size: 18px;
+  font-family:kaiti;
+  text-align: center;
+  margin-top: 2px;
+  text-decoration: blink;
+  margin-left: 8%;
+  margin-right: 5%;
+  color: #cd8162;
+}
+
+.neirong image {
+  height: 250px;
+  width: 365px;
+  padding: 5px 5px 5px 5px;
+}
+.words{
+  border: 3px solid #EEE8CD;
+   padding: 5px 5px 5px 10px;
+    width: 350prx;
+   height:150rpx;
+   background-color: #FAFAFA;
+
+}
+.words text{
+  font-size: 20px;
+  font-family:kaiti;
+  color: #cd8162;
+
+}
+input {
+  border: 3px solid #ccc;
+  padding: 5px 5px 5px 10px;
+  width: 350px;
+
+}
+
+button {
+  background-color:greenyellow;
+  height: 50px;
+  width: 100px;
+ margin-top: 5px;
+
+}
+
+view.text{
+width:100%;
+padding:5px 12px 5px 15px;
+color:#656565;
+margin-top: 3px;
+}
+.lineflag{
+ width:3px;
+ height:15px;
+ background-color:#09bb07;
+ /*行内块，拥有行级元素特性的块级元素
+ 行级元素：不会自动换行
+ 块级元素：单独占一行
+*/
+ display: inline-block;
+ margin-left: 1px;
+}
+
+view.text text{
+  margin-left:8px;
+  line-height: 12px;
+}
+.bottom{
+  margin-top: 1px;
+    box-sizing: border-box;
+  background-color: #fff;
+ }
+  .joke{
+   font-size: 14px;
+   margin: 5px 10px 30px 10px; 
+ 
+ } 
+ /* 背景  */
+ .background{
+  /*固定定位  相对于屏幕窗口进行定位 */
+   position: fixed;   
+   height: 100%;
+  width: 100%; 
+  opacity: 0.2;
+}  
+.jokepage{
+  height: 150px;
+ 
+}
+.video{
+  background-color: #fff;
+}
+.video video{
+    width:85%;
+   padding:20px;
+
+   background-color: #fff; 
+   
+}
+.jokepage2{
+  margin-left: 10px;
+  height:130px;
+  width:100px;
+}
+.jokepage3{
+  margin-left: 10px;
+  height:180px;
+  width:300px;
+}
+.middle1{
+    margin-top: 0px;
+    box-sizing: border-box;
+    background-color: #fff8dc;
+     opacity:0.8;
+ }
+ .home{
+    font-size: 14px;
+    margin: 5px 10px 30px 10px; 
+ }
+.bk{
+  position:fixed; 
+  margin-top:0px; 
+  height:100%;
+  width:100%;
+  opacity:0.1;
+}
+.middle2{
+    margin-top: 20px;
+    box-sizing: border-box;
+    background-color: #fff8dc;
+    opacity:0.8;
+ }
+ .touxiang{
+   height:35px;
+   width:35px;
+ }
+ .mingzi{
+  opacity:0.8;
+  margin-left:45px;
+  margin-top:-35px;
+  display:flex;
+
+ }

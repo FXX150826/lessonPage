@@ -1,0 +1,32 @@
+<!--index.wxml-->
+<view id="section">
+<view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+    <view class="flex-wrap">
+      <view class="flex-item" wx:for="{{x_menus}}">
+        <view>
+          <image src="{{item.icon}}" class="icon"></image>
+        </view>
+        <view class="menus_title">
+          <text>{{item.title}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view id="menus">
+    <view class="content" wx:for="{{y_menus}}">
+      <view class="view">
+        <text>{{item.title}}</text>
+      </view>
+      <view class="right">
+        <image src="../../images/rightjian.png" style="width:14px;height:14px"></image>
+      </view>
+    </view>
+ 
+
+</view>

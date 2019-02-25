@@ -1,0 +1,107 @@
+<!--pages/free/free.wxml-->
+<scroll-view class='container' scroll-y="true">
+<!-- 背景图片  
+ <image class="bk" src="../../images/x5.jpg" mode="aspectFill"></image> -->
+
+
+  <!--轮播图  -->
+  <view class='slide'>
+    <swiper indicator-dots='true' autoplay='true' interval='3000' duration='3000'>
+
+      <swiper-item wx:for="{{images}}" wx:for-item="item">
+        <image src='{{item}}' mode="aspectFill"></image>
+      </swiper-item>
+    </swiper>
+  </view>
+
+  <!--今日话题  -->
+  <view class="talk">
+    <text class='main'>今日话题</text>
+  </view>
+  <!--话题内容  -->
+  <view class="neirong">
+    <text>作为90后"老青年"，该如何评判自己的颜值呢？</text>
+    <image src="../../images/talk.jpg" mode='aspectFill' danmu-btn='ture'></image>
+    
+    
+    <!--弹幕  -->
+    <view class='words'>
+    <text>{{words}}</text>    
+    </view>
+    <!--输入框  
+     bindblur：输入框失去焦点时调用
+     placeholder：输入框空时用来占位-->
+    <input bindblur='bindInputBlur' placeholder='说说吧！'>
+    </input>
+    <!--按钮  
+         bindTap:点击按钮要发生的事情
+         -->
+    <button bindtap='send'>Boom</button>
+  </view>
+
+
+  <!--轻松时刻  -->
+  <!--文字 “轻松时刻”  -->
+  <view class='text'>
+    <view class='lineflag'></view>
+    <text>轻松时刻</text>
+   </view>
+
+
+   <!--段子内容  -->
+   <view class='bottom'>
+    <!--段子  -->
+    <view class='joke'>
+    <text> “爆笑校园”：
+     有天同桌和班主任吵了一架，还挺严重的，直接被老师骂出去罚站了，下课后回来就一直趴在座位上，有好几个漂亮的女同学安慰他.于是第二天我也和班主任吵了一架，后来回到座位上一直到下节课都没人来安慰我，正在我想抬头看看的时候，只听几个女同学喊道：“老师，他上课睡觉。。。”
+</text>
+  </view>
+
+ 
+  <view class='joke'>
+    <text>“星座” ：
+     1.暧昧王:天蝎座；2.犹豫不决:处女座；3.朝三暮四:双子座；4.逆向思维:水瓶座；5.真爱无罪:双鱼座；6.以史为鉴:摩羯座；7.权衡利弊:金牛座；8.宁缺毋滥:天秤座；9.社会道德:巨蟹座；10.惜时如金:白羊座；11.无暇顾及:射手座；12.目标明确:狮子座。你是这样的吗？</text>
+  </view>
+  <image class='jokepage'  src="../../images/page10.jpg"></image>
+ 
+  </view>
+
+  <!--运动运动  -->
+ <view class='text'>
+    <view class='lineflag'></view>
+    <text>运动运动</text>
+  </view>
+  <view class='video'>
+   <video src="../../videos/video.mp4"></video>
+  </view>
+
+
+  
+
+<view class='text'>
+      <view class='lineflag'></view>
+      <text>跳蚤市场</text>
+    </view>
+
+    <view class="middle1">
+      <view class="home">
+           <image class="touxiang" src="../../images/x4.jpg"></image>
+          
+           <text class="mingzi">郝梦</text>
+        <view>
+        <text> 
+        #小主带我回家#:本人一套计算技术书九成新，有意者联系：15398078859</text></view>
+      </view>
+      <image class='jokepage2'  src="../../images/x1.jpg"></image>
+    </view>
+    <view class="middle2">
+      <view class="home">
+      <image class="touxiang" src="../../images/x2.jpg"></image>
+           <text class="mingzi">夏天</text>
+        <text>
+        #小主带我回家#:粉红豹四小只，QQ联系12345678</text>
+      </view>
+      <image class='jokepage3'  src="../../images/x3.jpg"></image>
+    </view>
+
+</scroll-view>

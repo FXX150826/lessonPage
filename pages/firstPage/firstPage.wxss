@@ -1,0 +1,107 @@
+/*1.轮播图  */
+.slide swiper{
+  height: 500rpx;
+  margin-top: 5rpx;
+}
+
+.slide swiper image{
+  height: 500rpx;
+  width: 750rpx;
+  display: inline-block;
+  overflow:hidden;
+}
+
+
+
+/*课程  */
+.item{
+  padding:10px;
+   /* background-color: #fff8dc;  */
+  color:azure;
+  border-top:1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+}
+
+
+
+.item-left{
+  margin-left: 10px;
+  margin-top: 5px;
+  overflow: hidden;
+  width: 180px;
+  height:170px;
+}
+
+.item-left image{
+  width: 100%;
+  height: 100%;
+  align-content: center;
+}
+
+.item-right{
+  margin-left: 10px;
+  margin-top: 5px;
+  overflow: hidden;
+  width: 180px;
+  height:160px;
+
+  
+  /*padding-top: 15px;
+  padding-bottom: 10px; */
+
+  
+   /* background-color: #000;  */
+   
+}
+
+/* .item-right image{
+
+  margin-left: 10px;
+  margin-top: 5px;
+  overflow: hidden;
+  width: 150px;
+  height:170px;
+  
+/* } */
+
+.background{
+   /*固定定位,相对于屏幕窗口进行定位   */
+   position:fixed;
+  height: 100%;
+  width: 100%; 
+  /*透明度：值越小，透明度越高  */
+  opacity: 0.2; 
+  /*堆叠顺序：拥有高堆叠顺序的元素，总会处于低堆叠顺序元素的前面  */
+   z-index: -1; 
+}
+
+.item-right .title{
+  font-size: 20px;
+  color:#000;
+  margin:2px,0px;
+}
+
+.item-right .time{
+  font-size: 18px;
+  color: #000;
+  margin:2px 0px;
+}
+
+.item-right.tag{
+  display: inline-block;
+  margin-top: 50px;
+  border: 1px solid #29cc6d;
+  /*边框圆角度  */
+  border-radius: 3px;
+  color: #000;
+  padding: 2px 4px;
+  font-size: 12px;
+  
+  
+}
+
+
